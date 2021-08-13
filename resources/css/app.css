@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.text-general {
+    color: #c81727;
+}
+
+.text-shadow {
+    text-shadow: 1px 1px 1px #000;
+}
+
+.shadowed {
+    filter: drop-shadow(1px 1px 1px #000);
+}
+
+.btn-container {
+    @apply m-2 text-center;
+}
+
+.btn {
+    @apply px-4 py-2 rounded-lg text-gray-50 font-bold shadow-lg uppercase;
+}
+
+.btn-create {
+    @apply bg-green-500 hover:bg-green-600;
+}

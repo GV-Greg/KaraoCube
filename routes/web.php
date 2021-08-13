@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\SubmissionController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -14,5 +15,8 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('home');
 });
+
+Route::get('/dashboard', [SubmissionController::class, 'index'])->middleware('auth')->name('dashboard');
+Route::get('/update/{id}', [SubmissionController::class, 'update'])->middleware('auth')->name('submission.update');
