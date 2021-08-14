@@ -43,13 +43,14 @@ class Search extends Component
         }
     }
 
-    public function showForm()
+    public function showForm(int $index)
     {
         if($this->songs->isNotEmpty()) {
-            $this->song_id = $this->songs[$this->selectedIndex]['id'];
-            $this->song = $this->songs[$this->selectedIndex]['interpreter'] . ' - ' . $this->songs[$this->selectedIndex]['title'];
+            $this->song_id = $this->songs[$index]['id'];
+            $this->song = $this->songs[$index]['interpreter'] . ' - ' . $this->songs[$index]['title'];
             $this->query = '';
         }
+
     }
 
     public function updated($propertyName)

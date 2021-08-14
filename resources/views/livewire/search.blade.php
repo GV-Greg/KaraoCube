@@ -12,7 +12,7 @@
                     <ul>
                         @foreach($songs as $index => $song)
                             <li class="p-1 hover:text-green-500">
-                                <button @click="openForm = true; @this.showForm(); open = false;" @click.away="openForm = false" class="cursor-pointer">{{ $song->interpreter }} - {{ $song->title }}</button>
+                                <button @click="openForm = true; @this.showForm({{$index}}); open = false;" @click.away="openForm = false" class="cursor-pointer">{{ $song->interpreter }} - {{ $song->title }}</button>
                             </li>
                         @endforeach
                     </ul>
