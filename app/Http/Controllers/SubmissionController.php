@@ -8,12 +8,10 @@ use Illuminate\Http\Request;
 class SubmissionController extends Controller
 {
     public function index() {
-        $submissions = Submission::orderBy('status', 'ASC')->orderBy('id', 'DESC')->get();
-
-        $submissions_group = $submissions->groupBy('status');
+        $submissions = Submission::where('status', 'new')->orderBy('id', 'DESC')->get();
 
         return view('admin.dashboard', [
-            'submissions' => $submissions_group,
+            'submissions' => $submissions,
         ]);
     }
 

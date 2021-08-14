@@ -2,6 +2,24 @@
 @tailwind components;
 @tailwind utilities;
 
+html, body {
+    margin:0;
+    padding:0;
+}
+
+/*#main {*/
+/*    min-height:100%;*/
+/*    position:relative;*/
+/*    padding-bottom:40px;*/
+/*    overflow:auto;*/
+/*}*/
+
+/*#footer {*/
+/*    position:fixed;*/
+/*    bottom:0;*/
+/*    height:40px;*/
+/*}*/
+
 .text-general {
     color: #c81727;
 }
