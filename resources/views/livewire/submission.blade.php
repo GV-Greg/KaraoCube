@@ -17,7 +17,7 @@
                     <a href="{{ route('submission.update', $submission->id) }}" class="mx-auto outline-none">
                         <i class="fas fa-microphone-alt-slash fa-lg text-{{ $submission->status_color }}-500"></i>
                     </a>
-                @else
+                @elseif($submission->status === 'launched')
                     <span class="mx-auto">
                         <i class="fas fa-microphone-alt fa-lg text-{{ $submission->status_color }}-500"></i>
                     </span>
