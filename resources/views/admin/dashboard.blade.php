@@ -1,9 +1,9 @@
 @extends('layouts.app')
 
 @section('content')
-    <div class="w-full flex flex-col justify-center min-h-screen">
+    <div class="w-full flex flex-col items-center min-h-screen">
         <h1 class="mb-2 text-center text-green-600 font-bold text-2xl uppercase">Les demandes</h1>
-        <div class="w-full flex justify-center">
+        <div class="md:w-3/4 w-full flex justify-center">
             <table class="border-collapse w-full">
                 <thead>
                     <tr class="bg-blueGray-800 text-blueGray-200 font-bold text-md uppercase text-center">

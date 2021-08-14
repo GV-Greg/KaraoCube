@@ -19,8 +19,10 @@
     <body class="flex flex-col items-center justify-center min-h-screen bg-blueGray-800 text-gray-50 md:px-10 px-5">
             @include('partials.navbar')
             <main class="w-full flex flex-row bg-blueGray-800 min-h-screen">
-                <livewire:flash />
-                @yield('content')
+                <div class="w-full flex flex-col">
+                    <livewire:flash />
+                    @yield('content')
+                </div>
             </main>
 
         <!-- Scripts livewire -->
