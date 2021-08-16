@@ -25,7 +25,6 @@ class FormSubmission extends Component
         'song.max' => 'Il faut moins de 200 caractères.',
     ];
 
-
     public function send()
     {
         $validatedData = $this->validate();

@@ -11,10 +11,15 @@ class Submission extends Model
 
     public function getStatusColorAttribute()
     {
-        return [
-                'new' => 'green',
-                'launched' => 'blue',
-            ][$this->status] ?? 'gray';
+        if($this->song_id != null) {
+            if($this->status ==='new') {
+                return 'green';
+            } else {
+                return 'blue';
+            }
+        } else {
+            return 'orange';
+        }
     }
 
     public function getHeureAttribute()
