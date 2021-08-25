@@ -2,7 +2,7 @@
 
 @section('content')
     <div class="w-full flex flex-col items-center min-h-screen">
-        <div>
+        <div class="flex items-center">
             <a href="{{ route('activity.edit') }}" class="btn-container">
                 <button class="btn btn-create">Prochain &eacute;vent</button>
             </a>
