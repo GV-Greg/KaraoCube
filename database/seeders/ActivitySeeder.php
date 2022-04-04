@@ -17,7 +17,8 @@ class ActivitySeeder extends Seeder
     {
         $activities = [
             [
-                'status' => true,
+                'status' => false,
+                'next_event' => '01/04/2025',
             ],
         ];
 

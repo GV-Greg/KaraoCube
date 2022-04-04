@@ -17,7 +17,7 @@ class CreateActivitiesTable extends Migration
             $table->id();
             $table->boolean('status');
             $table->date('next_event')->nullable();
-            $table->string('image', 250)->nullable();
+            $table->string('image', 190)->nullable();
             $table->timestamps();
         });
     }

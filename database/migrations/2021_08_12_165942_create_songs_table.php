@@ -15,8 +15,8 @@ class CreateSongsTable extends Migration
     {
         Schema::create('songs', function (Blueprint $table) {
             $table->id();
-            $table->string('interpreter', 250)->default(null)->nullable();
-            $table->string('title', 250)->default(null)->nullable();
+            $table->string('interpreter', 190)->default(null)->nullable();
+            $table->string('title', 190)->default(null)->nullable();
         });
     }
 

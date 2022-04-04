@@ -15,8 +15,8 @@ class CreateSubmissionsTable extends Migration
     {
         Schema::create('submissions', function (Blueprint $table) {
             $table->id();
-            $table->string('singer', 200);
-            $table->string('song', 200);
+            $table->string('singer', 190);
+            $table->string('song', 190);
             $table->foreignId('song_id')->nullable()->constrained();
             $table->timestamps();
         });

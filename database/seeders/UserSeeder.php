@@ -17,15 +17,9 @@ class UserSeeder extends Seeder
     {
         $users = [
             [
-                'name' => 'Greg',
-                'email' => 'gregvandenbergh@gmail.com',
-                'password'=> bcrypt('KAR-S@f3W@ys013'),
-                'remember_token' => Str::random(60),
-            ],
-            [
-                'name' => 'Fus',
-                'email' => 'alain.fustin@gmail.com',
-                'password'=> bcrypt('ZVcHY3Hct7yVrSd'),
+                'name' => 'Compte démo',
+                'email' => 'karao@creacube.site',
+                'password'=> bcrypt('demo-2022'),
                 'remember_token' => Str::random(60),
             ],
         ];
